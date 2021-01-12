@@ -1,0 +1,30 @@
+### BATTERY ###
+# Critical Battery
+[[battery.display]]
+threshold = 33
+style = "bold red"
+
+# Moderate Battery
+[[battery.display]]
+threshold = 66
+style = "bold yellow"
+
+# High Battery
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
+### EXTRA INFO ###
+[time]
+disabled = false
+
+[status]
+style = "bg:red"
+symbol = "💣 "
+format = '[\[$symbol$status\]]($style) '
+disabled = false
+
+[memory_usage]
+threshold = -1
+style = "bold white"
+disabled = false
